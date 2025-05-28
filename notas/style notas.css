@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="number"] {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+input[type="number"]:focus {
+    box-shadow: 0 0 8px #a890f0;
+}
+button {
+    background: #9f7aea;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background: #7c3aed;
+}
+.resultado {
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.passou {
+    color: #86efac;
+}
+.reprovou {
+    color: #f87171;
+}
+@media (max-width: 450px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
